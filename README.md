@@ -1,3 +1,3 @@
 # VitalWell Journal
 
-A static health and wellness blog designed for GitHub Pages. The site includes original English articles, SEO metadata, responsive layout, search, category pages, privacy policy, terms, contact page, medical disclaimer, robots.txt, and sitemap.xml.
+A static health and wellness blog for GitHub Pages. The site includes 30 original English-language health articles dated throughout 2024, category and archive pages, responsive navigation, privacy policy, terms, medical disclaimer, sitemap.xml, robots.txt, and RSS feed.xml.
