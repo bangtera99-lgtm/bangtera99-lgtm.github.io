@@ -1,91 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dudurukan</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #0f172a;
-        color: #f8fafc;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        padding: 2rem;
-        background:
-          radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 32rem),
-          radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.2), transparent 28rem),
-          #0f172a;
-      }
-
-      main {
-        width: min(100%, 760px);
-        padding: clamp(2rem, 6vw, 4rem);
-        border: 1px solid rgba(148, 163, 184, 0.25);
-        border-radius: 28px;
-        background: rgba(15, 23, 42, 0.72);
-        box-shadow: 0 24px 80px rgba(2, 6, 23, 0.5);
-        backdrop-filter: blur(18px);
-      }
-
-      p.kicker {
-        margin: 0 0 1rem;
-        color: #38bdf8;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(3rem, 12vw, 6.5rem);
-        line-height: 0.9;
-        letter-spacing: -0.08em;
-      }
-
-      p.description {
-        max-width: 34rem;
-        margin: 1.5rem 0 0;
-        color: #cbd5e1;
-        font-size: clamp(1rem, 2vw, 1.2rem);
-        line-height: 1.7;
-      }
-
-      .panel {
-        margin-top: 2rem;
-        padding: 1rem 1.25rem;
-        border-radius: 18px;
-        background: rgba(15, 23, 42, 0.72);
-        color: #e2e8f0;
-        border: 1px solid rgba(148, 163, 184, 0.18);
-      }
-
-      .panel strong {
-        color: #f8fafc;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <p class="kicker">GitHub import ready</p>
-      <h1>dudurukan</h1>
-      <p class="description">
-        This Replit project has been configured with a minimal static website so the imported repository is runnable and visible in the preview.
-      </p>
-      <div class="panel">
-        <strong>Status:</strong> serving static files on port 5000.
-      </div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitalWell Journal | Evidence-Informed Health and Wellness Articles</title>
+  <meta name="description" content="Evidence-informed wellness articles about nutrition, sleep, movement, prevention, and everyday healthy habits.">
+  <meta name="keywords" content="health, wellness, nutrition, sleep, fitness">
+  <meta name="author" content="VitalWell Journal Editorial Team">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://bangtera99-lgtm.github.io/dudurukan/">
+  <meta property="og:title" content="VitalWell Journal | Evidence-Informed Health and Wellness Articles">
+  <meta property="og:description" content="Evidence-informed wellness articles about nutrition, sleep, movement, prevention, and everyday healthy habits.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bangtera99-lgtm.github.io/dudurukan/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">VitalWell Journal</a>
+    <nav class="top-nav" aria-label="Primary navigation">
+  <a href="./index.html">Home</a>
+  <a href="./categories.html">Posts by Category</a>
+  <a href="./about.html">About</a>
+  <a href="./contact.html">Contact</a>
+</nav>
+    <button class="search-toggle" type="button" aria-label="Open search">⌕</button>
+  </header>
+  <div class="search-panel" hidden>
+    <label for="site-search">Search articles</label>
+    <input id="site-search" type="search" placeholder="Enter your search term...">
+    <div id="search-results" class="search-results"></div>
+  </div>
+  <main class="layout">
+    <aside class="sidebar">
+  <div class="avatar" aria-hidden="true">VW</div>
+  <h1>VitalWell Journal</h1>
+  <p class="bio">Evidence-informed health and wellness articles written in clear English for readers who want practical, sustainable habits.</p>
+  <p class="bio">Topics include nutrition, sleep, movement, prevention, hydration, and mental wellness. Content is educational and does not replace medical advice.</p>
+  <ul class="profile-links">
+    <li><span>📍</span> Global wellness resource</li>
+    <li><span>🔗</span> <a href="./about.html">About this site</a></li>
+    <li><span>✉️</span> <a href="./contact.html">Contact</a></li>
+    <li><span>⚕️</span> <a href="./legal/medical-disclaimer.html">Medical disclaimer</a></li>
+  </ul>
+</aside>
+    <section class="content">
+  <div class="hero-note">
+    <p class="eyebrow">Health articles for better everyday decisions</p>
+    <h2>Recent posts</h2>
+    <p>Clear, original wellness content designed for readers and search engines, with responsible disclaimers and practical takeaways.</p>
+  </div>
+  <div class="section-line"></div>
+  
+<article class="post-card" data-title="Balanced Nutrition for Busy Adults: A Practical Guide" data-category="Nutrition">
+  <a class="post-title" href="./articles/balanced-nutrition-for-busy-adults-a-practical-guide.html">🥗 Balanced Nutrition for Busy Adults: A Practical Guide</a>
+  <div class="post-meta">◷ 6 minute read · Nutrition · April 14, 2026</div>
+  <p>Simple, sustainable nutrition habits that support energy, digestion, and long-term health without extreme dieting.</p>
+</article>
+<article class="post-card" data-title="Sleep Hygiene Habits That Support Better Recovery" data-category="Sleep">
+  <a class="post-title" href="./articles/sleep-hygiene-habits-that-support-better-recovery.html">🌙 Sleep Hygiene Habits That Support Better Recovery</a>
+  <div class="post-meta">◷ 5 minute read · Sleep · April 14, 2026</div>
+  <p>Improve sleep quality with consistent routines, light exposure, bedroom habits, and smarter evening choices.</p>
+</article>
+<article class="post-card" data-title="Daily Movement for Heart and Metabolic Health" data-category="Fitness">
+  <a class="post-title" href="./articles/daily-movement-for-heart-and-metabolic-health.html">🚶 Daily Movement for Heart and Metabolic Health</a>
+  <div class="post-meta">◷ 6 minute read · Fitness · April 14, 2026</div>
+  <p>A beginner-friendly explanation of how walking, strength training, and reduced sitting support long-term health.</p>
+</article>
+<article class="post-card" data-title="Hydration and Electrolytes: What Most People Need to Know" data-category="Wellness">
+  <a class="post-title" href="./articles/hydration-and-electrolytes-what-most-people-need-to-know.html">💧 Hydration and Electrolytes: What Most People Need to Know</a>
+  <div class="post-meta">◷ 4 minute read · Wellness · April 14, 2026</div>
+  <p>Understand thirst, water intake, electrolytes, and when sports drinks may or may not be useful.</p>
+</article>
+<article class="post-card" data-title="Preventive Health Checkups: Questions to Ask Your Clinician" data-category="Prevention">
+  <a class="post-title" href="./articles/preventive-health-checkups-questions-to-ask-your-clinician.html">🩺 Preventive Health Checkups: Questions to Ask Your Clinician</a>
+  <div class="post-meta">◷ 7 minute read · Prevention · April 14, 2026</div>
+  <p>Make routine appointments more useful with prepared questions about screenings, vaccines, risk factors, and lifestyle goals.</p>
+</article>
+<article class="post-card" data-title="Stress Management Skills for Everyday Life" data-category="Mental Wellness">
+  <a class="post-title" href="./articles/stress-management-skills-for-everyday-life.html">🧠 Stress Management Skills for Everyday Life</a>
+  <div class="post-meta">◷ 5 minute read · Mental Wellness · April 14, 2026</div>
+  <p>Practical stress tools including breathing, boundaries, movement, sleep routines, and when to seek support.</p>
+</article>
+  <nav class="pagination" aria-label="Pagination">
+    <span class="disabled">Previous</span>
+    <a class="active" href="./index.html">1</a>
+    <a href="./categories.html">2</a>
+    <a href="./about.html">Next</a>
+  </nav>
+</section>
+  </main>
+  <footer class="site-footer">
+  <strong>Follow:</strong>
+  <a href="./index.html">Home</a>
+  <a href="./categories.html">Categories</a>
+  <a href="./privacy-policy.html">Privacy Policy</a>
+  <a href="./terms.html">Terms</a>
+  <a href="./legal/medical-disclaimer.html">Medical Disclaimer</a>
+</footer>
+  <script src="./script.js"></script>
+</body>
 </html>

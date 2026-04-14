@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bangtera99-lgtm.github.io/dudurukan/sitemap.xml
