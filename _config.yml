@@ -1,0 +1,8 @@
+title: VitalWell Journal
+url: "https://bangtera99-lgtm.github.io"
+description: "Practical, evidence-informed health and wellness articles."
+minimal_mistakes_skin: default
+locale: en-US
+search: true
+atom_feed:
+  path: feed.xml
