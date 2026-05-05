@@ -1,0 +1,37 @@
+name: Weekly Article Generator
+
+on:
+  schedule:
+    # Every Monday at 08:00 UTC
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+    # Allow manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  generate-article:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate new article
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/generate-article.mjs
+
+      - name: Commit and push new article
+        run: |
+          git config user.name "VitalWell Bot"
+          git config user.email "bot@vitalwell.journal"
+          git add .
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "auto: add new weekly article [$(date +'%Y-%m-%d')]"
+          git push
